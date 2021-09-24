@@ -2,6 +2,7 @@
 This repository provides guidance in transforming raw data output from Refinitiv Eikon's horrendous Excel add-in to panel data for asset pricing or equity research with R.
 
 Script: https://github.com/aaron-kaijser/Transforming-Refinitiv-Eikon-Data-to-Panel-Data-for-Asset-Pricing-and-Equity-Research/blob/main/Transforming_Datastream_Data.R
+
 Data: https://github.com/aaron-kaijser/Transforming-Refinitiv-Eikon-Data-to-Panel-Data-for-Asset-Pricing-and-Equity-Research/blob/main/UK_2000_2020.csv
 
 ## 1. Acquiring the right data output format
