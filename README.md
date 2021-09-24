@@ -45,7 +45,7 @@ The following .csv file can be found in this repository and is the dataset that 
 ![image](https://user-images.githubusercontent.com/52838190/134646063-47b0ffd0-f527-4aec-994b-57625ac924de.png)
 
 #### Function output
-The function transform the initial 258 x 13,804 matrix into a panel data with a total of approximately 370,000 observations for 3,617 stocks. 
+The function transforms the initial 258 x 13,804 matrix into a panel data with a total of approximately 370,000 observations for 3,617 stocks. 
 ```
 > head(dt, 20)
            Stock       Date WC01001   NOSH       ret
@@ -72,7 +72,7 @@ The function transform the initial 258 x 13,804 matrix into a panel data with a 
 ```
 
 ### Example 2
-I downloaded a small dataset containing 6 different stocks with 9 different variables. After running the output I obtain the following:
+I downloaded a small dataset containing 6 different stocks with 9 different variables. After running the function I obtain the following:
 ```
 > dt <- ds_transform(data)
 Total number of unique stocks in this dataset is: 6. If this is not correct, something went wrong.
