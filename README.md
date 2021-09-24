@@ -1,6 +1,9 @@
 # Transforming-Refinitiv-Eikon-Data-to-Panel-Data-for-Asset-Pricing-and-Equity-Research
 This repository provides guidance in transforming raw data output from Refinitiv Eikon's horrendous Excel add-in to panel data for asset pricing or equity research with R.
 
+Script: https://github.com/aaron-kaijser/Transforming-Refinitiv-Eikon-Data-to-Panel-Data-for-Asset-Pricing-and-Equity-Research/blob/main/Transforming_Datastream_Data.R
+Data: https://github.com/aaron-kaijser/Transforming-Refinitiv-Eikon-Data-to-Panel-Data-for-Asset-Pricing-and-Equity-Research/blob/main/UK_2000_2020.csv
+
 ## 1. Acquiring the right data output format
 ![Datastream_1](https://user-images.githubusercontent.com/52838190/134586200-c414aca1-e76b-41cd-9d0a-78125a019847.png)
 1. Indicate which equities you would like to retrieve data for. I created a custom list (L#UKTEST) which contains 4,601 dead and active U.K. equities that were or are listed on the 
