@@ -73,6 +73,13 @@ The function transform the initial 258 x 13,804 matrix into a panel data with a 
 ### Example 2
 I downloaded a small dataset containing 6 different stocks with 9 different variables. After running the output I obtain the following:
 ```
+> dt <- ds_transform(data)
+Total number of unique stocks in this dataset is: 6. If this is not correct, something went wrong.
+Total number of variables per stock is: 9. If this is not correct, something went wrong.
+Of the 6 unique stocks, 0 have been removed because they have no values.
+Another 0 stocks have been removed from the sample due to missing returns. The final number of unique stocks is: 6
+```
+```
 > head(dt, 20)
     Stock       Date WC01001   NOSH    UP      MV WC01051 WC02999 WC02101 WC02255       ret
  1:   AZN  30-6-1993 4440000 944688 625.0 5904.30 1713000 4962000  776000      NA -0.011100
