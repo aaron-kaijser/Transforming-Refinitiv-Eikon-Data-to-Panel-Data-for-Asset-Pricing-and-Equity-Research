@@ -1,8 +1,5 @@
 # Transforming-Refinitiv-Eikon-Data-to-Panel-Data-for-Asset-Pricing-and-Equity-Research
-This repository provides guidance in transforming raw data output from Refinitiv Eikon's Excel add-in to panel data for asset pricing or equity research.
-
-## Refinitiv Eikon's Excel Add-in
-If you manage to acquire raw equity data using Refinitiv Eikon's horrendous Excel add-in, you still have to transform your data in order for it to be usable. This should guide you.
+This repository provides guidance in transforming raw data output from Refinitiv Eikon's horrendous Excel add-in to panel data for asset pricing or equity research with R.
 
 ## 1. Acquiring the right data output format
 ![Datastream_1](https://user-images.githubusercontent.com/52838190/134586200-c414aca1-e76b-41cd-9d0a-78125a019847.png)
