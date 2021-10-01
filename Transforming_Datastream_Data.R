@@ -13,7 +13,7 @@ library(zoo) # for trimming leading NA values
 
 
 # Importing data ----------------------------------------------------------
-dt <- fread("C:/UK_2000_2020.csv")
+dt <- fread("https://raw.githubusercontent.com/aaron-kaijser/Transforming-Refinitiv-Eikon-Data-to-Panel-Data-for-Asset-Pricing-and-Equity-Research/main/UK_2000_2020.csv")
 
 
 # Function
