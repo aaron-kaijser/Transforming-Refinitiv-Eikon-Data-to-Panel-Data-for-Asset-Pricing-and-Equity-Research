@@ -38,7 +38,7 @@ ds_transform <- function(data) {
   names <- gsub("\\s*\\([^\\)]+\\)\\s*$", "", rows) # removes text between parentheses (i.e "GB00BMSKPJ95(RI)" to "GB00BMSKPJ95")
   
   # for loop that pastes variable names to stock names (i.e. "GB00BMSKPJ95" becomes "GB00BMSKPJ95_RI" - makes transposing easier)
-  sequ <- seq(1, (length(names) + length(varnames)-1), by = length(varnames)) # creates a vector to iterate over
+  sequ <- seq(1, (length(names) + length(varnames)-1), by = length(varnames)) # creates a vector to iterate over (example: if you selected 3 variables, it creates a vector that starts with 1, 4, 7 etc. which I use to select every 3 columns per stock ID)
   empty_vec_list <- list() # empty list to store values
   for (i in 1:(length(sequ)-1)) {
     vec <- names[sequ[i]:(sequ[i+1]-1)] # subsets vector with names
