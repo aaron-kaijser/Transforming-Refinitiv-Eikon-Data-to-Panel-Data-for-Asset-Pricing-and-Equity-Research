@@ -28,6 +28,11 @@ ds_transform <- function(data) {
   varnames <- unique(str_extract(string = rows, pattern = "(?<=\\().*(?=\\))"))
   varnames <- varnames[!is.na(varnames)] # removes NA value (caused by missing data in Datastream)
   
+  # Quick check to see if RI is included in dataset
+  if ("RI" %in% varnames == FALSE) {
+    stop("ERROR: RI (Return Index) variable was not found among the variables. This variable is needed to determine the beginning and ending of the time-series of each stock, make sure to include it.")
+  } # errors out if RI is not found
+  
   # varnames will be used to transpose the dataset in the right way among others
   total_number_stocks <- (dim(data)[2] - 1) / length(varnames)
   message(paste0("Total number of unique stocks in this dataset is: ", total_number_stocks, ". If this is not correct, something went wrong."))
