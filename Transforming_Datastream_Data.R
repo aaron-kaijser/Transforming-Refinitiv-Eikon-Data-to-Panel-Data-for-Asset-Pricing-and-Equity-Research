@@ -105,6 +105,11 @@ ds_transform <- function(data) {
   
   # Removes first NA return row caused by calculating returns per security
   data <- data[data[, tail(data.table(ret, .I), (.N-1)), by = Stock]$.I,]
+                                               
+  # Replaces NaN values by 0
+  is.nan.data.frame <- function(x)
+  do.call(cbind, lapply(x, is.nan))
+  data[is.nan(data)] <- 0 # is.nan is the is.nan.data.frame function (method dispatch, see: https://stackoverflow.com/questions/18142117/how-to-replace-nan-value-with-zero-in-a-huge-data-frame/18143097)
   
   # Removes trailing returns of 0 (will delete any returns after delisting)
   data <- data[, {
